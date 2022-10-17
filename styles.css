@@ -24,11 +24,16 @@ main {
   background-color: white;
   box-shadow: 0rem 0rem 3.125rem -1.875rem black;
   padding-inline: 1.25rem;
-  border-radius: .625rem;
+  border-radius: 0.625rem;
 }
 
 .mark-all-as-read-btn {
+  color: hsl(219, 12%, 42%);
   cursor: pointer;
+}
+
+.mark-all-as-read-btn:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 .name {
@@ -43,7 +48,7 @@ main {
 
 .notification-timestamp {
   display: inline-block;
-  margin-top: .3125rem;
+  margin-top: 0.3125rem;
   color: hsl(219, 14%, 63%);
 }
 header {
@@ -63,9 +68,9 @@ h1 {
 .notification-count {
   position: absolute;
   left: 10.625rem;
-  padding-block: .125rem;
-  padding-inline: .625rem;
-  border-radius: .3125rem;
+  padding-block: 0.125rem;
+  padding-inline: 0.625rem;
+  border-radius: 0.3125rem;
   background-color: hsl(219, 85%, 26%);
   font-size: 1rem;
   color: white;
@@ -74,9 +79,9 @@ h1 {
 .notification {
   display: flex;
   align-items: center;
-  margin-bottom: .5rem;
-  padding-block: .9375rem;
-  border-radius: .625rem;
+  margin-bottom: 0.5rem;
+  padding-block: 0.9375rem;
+  border-radius: 0.625rem;
 }
 
 .unread-notification {
@@ -102,11 +107,11 @@ h1 {
 
 .private-message {
   max-width: 34.375rem;
-  margin-top: .3125rem;
+  margin-top: 0.3125rem;
   margin-left: 5.3125rem;
-  padding: .9375rem;
-  border-radius: .3125rem;
-  border: .0625rem solid hsl(205, 33%, 90%);
+  padding: 0.9375rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid hsl(205, 33%, 90%);
   color: hsl(219, 14%, 63%);
   cursor: pointer;
 }
@@ -133,8 +138,8 @@ h1 {
   position: absolute;
   top: 50%;
   right: -1.25rem;
-  height: .625rem;
-  width: .625rem;
+  height: 0.625rem;
+  width: 0.625rem;
   background-color: hsl(219, 12%, 42%);
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -143,7 +148,7 @@ h1 {
 .notification img {
   display: block;
   height: 3.125rem;
-  margin-right: .9375rem;
+  margin-right: 0.9375rem;
   margin-left: 1.25rem;
 }
 
@@ -158,10 +163,10 @@ h1 {
 
 @media (max-width: 37.5em) {
   p {
-    font-size: .875em;
+    font-size: 0.875em;
   }
 
   .private-message {
-    font-size: .875em;
+    font-size: 0.875em;
   }
 }
