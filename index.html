@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Notifications</h1>
+        <div class="notification-count">3</div>
+        <span class="mark-all-as-read-btn">Mark all as read</span>
+      </header>
+      <section class="unread-notification notification post-group-unread-notification">
+        <img src="assets/images/avatar-mark-webber.webp" alt="mark webber's profile image" />
+        <div>
+          <p>
+            <span class="name">Mark Webber&nbsp;</span> reacted to your recent
+            post&nbsp;
+            <span class="post-group">My first tournament today!</span>
+          </p>
+          <span class="notification-timestamp">1m ago</span>
+        </div>
+      </section>
+      <section class="unread-notification notification">
+        <img src="assets/images/avatar-angela-gray.webp" alt="angela gray's profile image" />
+        <div>
+          <p><span class="name">Angela Gray&nbsp;</span> followed you!</p>
+          <span class="notification-timestamp">5m ago</span>
+        </div>
+      </section>
+      <section class="unread-notification notification post-group-unread-notification">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="jacob thompson's profile image" />
+        <div>
+          <p>
+            <span class="name">Jacob Thompson&nbsp;</span> has joined your
+            group&nbsp; 
+            <span class="post-group">Chess Club</span>
+          </p>
+          <span class="notification-timestamp">1 day ago</span>
+        </div>
+      </section>
+      <section class="read-notification notification">
+        <div class="message-header-container">
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="rizky hasanudinn's profile image" />
+        <div>
+          <p>
+            <span class="name">Rizky Hasanuddin&nbsp;</span> sent you a private
+            message
+          </p>
+          <span class="notification-timestamp">5 days ago</span>
+        </div>
+        </div>
+        
+        <div class="private-message">
+          Hello, thanks for setting up the Chess Club. I've been a member for a
+          few weeks now and I'm already having lots of fun and improving my
+          game.
+        </div>
+      </section>
+      <section class="read-notification notification">
+        <img src="assets/images/avatar-kimberly-smith.webp" alt="kimberly smith's profile image" />
+        <div>
+          <p>
+            <span class="name">Kimberly Smith&nbsp;</span> commented on your
+            picture
+          </p>
+          <span class="notification-timestamp">1 week ago</span>
+        </div>
+        <img class="chess-image" src="assets/images/image-chess.webp" alt="kimberly smith's image post of chess" />
+      </section>
+      <section class="read-notification notification">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="nathan peterson's profile image" />
+        <div>
+          <p>
+            <span class="name">Nathan Peterson&nbsp;</span> reacted to your
+            recent post
+            <span class="post-group"
+              >5 end-game strategies to<br />increase your win rate</span
+            >
+          </p>
+          <span class="notification-timestamp">2 weeks ago</span>
+        </div>
+      </section>
+      <section class="read-notification notification">
+        <img src="assets/images/avatar-anna-kim.webp" alt="anna kim's profile image" />
+        <div>
+          <span>
+            <span class="name">Anna Kim</span> left the group&nbsp;</span>
+            <span class="post-group">Chess Club</span>
+          </p>
+          <span class="notification-timestamp">2 weeks ago</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

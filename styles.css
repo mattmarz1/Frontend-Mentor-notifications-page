@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --pseudoElementDisplay: block;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(210, 60%, 98%);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 45rem;
+  background-color: white;
+  box-shadow: 0rem 0rem 3.125rem -1.875rem black;
+  padding-inline: 1.25rem;
+  border-radius: .625rem;
+}
+
+.mark-all-as-read-btn {
+  cursor: pointer;
+}
+
+.name {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.post-group {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.notification-timestamp {
+  display: inline-block;
+  margin-top: .3125rem;
+  color: hsl(219, 14%, 63%);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  display: inline-block;
+  margin-bottom: 1.5625rem;
+  padding-top: 1.875rem;
+  font-size: 1.5625rem;
+}
+
+.notification-count {
+  position: absolute;
+  left: 10.625rem;
+  padding-block: .125rem;
+  padding-inline: .625rem;
+  border-radius: .3125rem;
+  background-color: hsl(219, 85%, 26%);
+  font-size: 1rem;
+  color: white;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+  padding-block: .9375rem;
+  border-radius: .625rem;
+}
+
+.unread-notification {
+  background-color: hsl(210, 60%, 98%);
+}
+
+.unread-notification:first-of-type .post-group {
+  color: hsl(219, 12%, 42%);
+}
+
+.notification:nth-child(4) .post-group {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification:nth-child(5) {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.message-header-container {
+  display: flex;
+}
+
+.private-message {
+  max-width: 34.375rem;
+  margin-top: .3125rem;
+  margin-left: 5.3125rem;
+  padding: .9375rem;
+  border-radius: .3125rem;
+  border: .0625rem solid hsl(205, 33%, 90%);
+  color: hsl(219, 14%, 63%);
+  cursor: pointer;
+}
+
+.private-message:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+
+.notification:nth-child(7) .post-group {
+  color: hsl(219, 12%, 42%);
+}
+
+.notification:nth-child(8) .post-group {
+  color: hsl(219, 85%, 26%);
+}
+
+.unread-notification p {
+  position: relative;
+}
+
+.unread-notification p::after {
+  content: "";
+  display: var(--pseudoElementDisplay);
+  position: absolute;
+  top: 50%;
+  right: -1.25rem;
+  height: .625rem;
+  width: .625rem;
+  background-color: hsl(219, 12%, 42%);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notification img {
+  display: block;
+  height: 3.125rem;
+  margin-right: .9375rem;
+  margin-left: 1.25rem;
+}
+
+.notification:nth-child(6) {
+  position: relative;
+}
+
+.chess-image {
+  margin-left: auto !important;
+  cursor: pointer;
+}
+
+@media (max-width: 37.5em) {
+  p {
+    font-size: .875em;
+  }
+
+  .private-message {
+    font-size: .875em;
+  }
+}
